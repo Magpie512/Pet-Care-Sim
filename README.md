@@ -20,13 +20,11 @@ A modern Tamagotchi-style virtual pet game for smartphones.
 ### Pet Variety
 1. Huge variety of pets: realistic animals, fantasy creatures, and comedic characters
 2. Rare and legendary pets to collect
-3. Hybrid breeding system to create unique pet combinations
-4. Seasonal and event-exclusive pets
 
 ### Social Features
 1. Local network visiting - visit friends' pets nearby
 2. Mail system to send gifts and messages
-3. Online leaderboards and achievements
+3. Online friends only leaderboards and achievements
 4. Pet playdates and competitions
 5. Trading system for items and pet eggs
 6. Global events and challenges
