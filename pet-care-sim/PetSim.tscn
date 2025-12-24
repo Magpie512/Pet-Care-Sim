@@ -4,7 +4,7 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_22vql"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Level ( House )" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.88158375, 0.47202772, 0, -0.47202772, 0.88158375, 0, 0.5664277, 0.26814246)
@@ -24,7 +24,7 @@ shape = SubResource("BoxShape3D_w13rf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3804201, 0)
 mesh = SubResource("BoxMesh_22vql")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="Default Ceiling Light" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9680959, -0.58356595)
 
 [node name="RWall" type="StaticBody3D" parent="."]
