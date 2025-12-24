@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmwxlu4vawppn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w13rf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_22vql"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.88158375, 0.47202772, 0, -0.47202772, 0.88158375, 0, 0.5664277, 0.26814246)
+fov = 46.5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+
+[node name="SubViewport" type="SubViewport" parent="Camera3D/CanvasLayer"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 1, 0, -0.005696818, -0.68110156)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_w13rf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3804201, 0)
+mesh = SubResource("BoxMesh_22vql")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9680959, -0.58356595)
+
+[node name="RWall" type="StaticBody3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, 1, 0, 0, 0, 1, 0.525, 0.5004513, -0.681)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RWall"]
+shape = SubResource("BoxShape3D_w13rf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RWall"]
+mesh = SubResource("BoxMesh_22vql")
+
+[node name="LWall" type="StaticBody3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, 1, 0, 0, 0, 1, -0.51, 0.5, -0.681)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LWall"]
+shape = SubResource("BoxShape3D_w13rf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="LWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0, 0)
+mesh = SubResource("BoxMesh_22vql")
+
+[node name="BWall" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.1, 0.3007704, 0.5, -1.1798184)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BWall"]
+shape = SubResource("BoxShape3D_w13rf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0, 0)
+rotation_order = 0
+mesh = SubResource("BoxMesh_22vql")
